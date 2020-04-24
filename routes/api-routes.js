@@ -2,13 +2,20 @@ var db = require("../models");
 
 module.exports = function(app) {
 
+    app.get("/", (req, res) => {
+        db.List.findAll({})
+        .then(dbList => { 
+        res.render("index", { restaurant: dbList });
+        });
+    });
+
     app.post("/api/list", (req, res) => {
         console.log(req.body)
     });
 
     app.get("/api/list", function(req, res) {
         db.List.findAll({})
-        .then(dbList => {res.json(dbList);
+        .then(dbList => {res.render("index", {restaurant: dbList});
         });        
     });
 
