@@ -1,0 +1,10 @@
+#list.handlebars
+<li>
+	{{name}}
+
+	<button class="change-been-there btn btn-lg {{#if list}}btn-sucess{{else}}btn-info{{/if}} " data-id="{{id}}" data-beenThere="{{list}}">
+		{{#if list}}Go to Restaurant!{{else}}Been There{{/if}}
+	</button>
+
+	<button class="forget-restaurant btn btn-danger btn-lg" data-id="{{this.id}}">FORGET!</button>
+</li>

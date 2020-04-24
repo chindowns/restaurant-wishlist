@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-wishlist",
+  "version": "1.0.0",
+  "description": "App creates a restaurant wish list checking off the restaurants that you have eaten at, Staring the restaurants that you would go again and removing the restaurants you don't want to visit while keeping them in the database as an unliked restaurant.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chindowns/restaurant-wishlist.git"
+  },
+  "author": "Michael Downs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chindowns/restaurant-wishlist/issues"
+  },
+  "homepage": "https://github.com/chindowns/restaurant-wishlist#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "handlebars": "^4.7.6",
+    "mysql2": "^2.1.0",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.7"
+  }
+}

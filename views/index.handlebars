@@ -1,0 +1,56 @@
+<header class="jumbotron">
+  <h1 class="display-4">Restaurants We Need to Eat At</h1>
+  <p class="lead">This is a list of restaurants that you want to eat at.  Once you have eaten at the restaurant, place in the in the "Been There - Ate That section."</p>
+</header>
+
+<div class="container">
+  <div class="row">
+      {{!-- left column of restaurants we want to visit --}}
+    <div class="col">
+        <h2>Restaurants to Visit</h2>
+        <ul>
+            {{#each restaurant}}
+                {{#unless been-there}}
+                <div class="card w-75">
+                <div class="card-body">
+                <h5 class="card-title">{{> restaurant-block been-there=true}}</h5>
+                </div>
+                </div>
+                {{/unless}}
+            {{/each}}
+        </ul>
+ 
+    </div>
+
+    <div class="col">
+        <h2>Been There - Ate That</h2>
+        <ul>
+            {{#each restaurant}}
+                {{#if been-there}}
+                <div class="card w-75">
+                <div class="card-body">
+                <h5 class="card-title">{{> restaurant-block been-there=false}}</h5>
+                </div>
+                </div>
+                {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+  </div>
+
+  <h2>Add a Restaurant</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="restaurant">Restaurant:</label>
+    <input id="restaurant" class="form-control form-control-lg" type="text" name="name" aria-describedby="restaurant you want to visit" placeholder="Restaurant you want to visit">
+  </div>
+
+  <div class="form-group">
+    <label for="been-there">Been There?</label><br>
+    <input type="radio" name="sleepy" value="1" checked> Go To Restaurant<br>
+    <input type="radio" name="sleepy" value="0"> Been There
+  </div>
+
+  <button class="btn btn-primary" type="submit">Add Restaurant</button>
+</form>
