@@ -1,0 +1,40 @@
+
+.container {
+    background-image: url("/assets/images/restaurant-background.70.jpg");
+    background-color: #cccccc;
+    max-width: 1200px;
+    min-height: 800px;
+  }
+
+header.jumbotron {
+    padding: 32px;
+}
+
+h2.center {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.semitrans {
+    opacity: 75%;
+}
+
+.card-body {
+    padding:10px;
+}
+
+#restaurant {
+    opacity: 100%;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+}

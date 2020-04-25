@@ -7,7 +7,14 @@ module.exports = function(sequelize, DataTypes) {
                 len: [2, 50]
             }
         },
-        beenThere: DataTypes.BOOLEAN
+        beenThere: 
+        {
+            type: DataTypes.BOOLEAN,
+            default: 0
+        }        
+    },
+    {
+        timestamps: false
     });
     return List;
 }

@@ -2,20 +2,26 @@
 $(function() {
     $(".change-been-there").on("click", function(event) {
       var id = $(this).data("id");
-      var beenThere = $(this).data("been-there");
-  
-      var beenThereState = {
-        beenThere: beenThere
-      };
-  
+      var wish = $(this).data("wish");
+       console.log("beenThere on Update Click:  "+wish+"  ID:  "+id);
+      
+      var beenThereState= {};
+
+      if (wish === true) { console.log('changing beenThere to false');
+        wish = false
+      } else {console.log('changing beenThere to true');
+        wish = true}
+      beenThereState = {
+        beenThere: wish
+      }
+    
       // Send the PUT request.
-      $.ajax("/api/list/" + id, {
+      $.ajax("/api/list/"+id, {
         type: "PUT",
         data: beenThereState
       }).then(
         function() {
-          console.log("changed beenThere to", beenThere);
-          // Reload the page to get the updated list
+          console.log("changed beenThere to", wish);
           location.reload();
         }
       );
@@ -24,10 +30,11 @@ $(function() {
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
+      console.log(event);
   
-      var newREstaurant = {
+      var newRestaurant = {
         name: $("#restaurant").val().trim(),
-        beenThere: $("[name=beenThere]:checked").val().trim()
+        beenThere: $("[name=wish]:checked").val().trim()
       };
   
       // Send the POST request.
