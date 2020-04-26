@@ -7,11 +7,11 @@
     "dialect": "mysql",
     "operatorsAliases": false
   },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+  "JAWSDB_URL": {
+    "username": "v9divyybfh4vg5b3",
+    "password": "sanbe74goxjhearl",
+    "database": "mjbvgr3xjaymu1p3",
+    "host": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false
   },
