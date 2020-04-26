@@ -3,14 +3,14 @@ $(function() {
     $(".change-been-there").on("click", function(event) {
       var id = $(this).data("id");
       var wish = $(this).data("wish");
-       console.log("beenThere on Update Click:  "+wish+"  ID:  "+id);
       
       var beenThereState= {};
 
-      if (wish === true) { console.log('changing beenThere to false');
+      if (wish === true) { 
         wish = false
-      } else {console.log('changing beenThere to true');
-        wish = true}
+      } else {
+        wish = true
+      }
       beenThereState = {
         beenThere: wish
       }
@@ -21,7 +21,6 @@ $(function() {
         data: beenThereState
       }).then(
         function() {
-          console.log("changed beenThere to", wish);
           location.reload();
         }
       );
@@ -30,7 +29,6 @@ $(function() {
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-      console.log(event);
   
       var newRestaurant = {
         name: $("#restaurant").val().trim(),
