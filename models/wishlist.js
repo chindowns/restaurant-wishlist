@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
         },
         beenThere: 
         {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.BOOLEAN
         }        
     },
     {
