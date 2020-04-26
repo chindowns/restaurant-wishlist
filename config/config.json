@@ -16,7 +16,7 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "v9divyybfh4vg5b3",
     "password": "sanbe74goxjhearl",
     "database": "bw0wrei45p5o4kil",
     "host": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
