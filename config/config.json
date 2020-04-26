@@ -7,18 +7,18 @@
     "dialect": "mysql",
     "operatorsAliases": false
   },
-  "JAWSDB_URL": {
-    "username": "v9divyybfh4vg5b3",
-    "password": "sanbe74goxjhearl",
-    "database": "mjbvgr3xjaymu1p3",
-    "host": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  "test": {
+    "username": "",
+    "password": "",
+    "database": "",
+    "host": "",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
-    "username": "v9divyybfh4vg5b3",
+    "username": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "password": "sanbe74goxjhearl",
-    "database": "mjbvgr3xjaymu1p3",
+    "database": "bw0wrei45p5o4kil",
     "host": "uc13jynhmkss3nve.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false
